@@ -45,8 +45,6 @@ body {
 
 .huddle-container {
 
-
-
     height: 100vh;
     position: relative;
     display: flex;
@@ -60,11 +58,21 @@ body {
 
     gap: 50px;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+}
+.huddle-cust-img{
+    width: 60%;
+}
+.huddle-cust-img img{
+    width: 100% !important;
+    height: auto;
+}
+.huddle-section{
+  width: 40%;
 }
 
 .huddle-section h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     line-height: 1.5em;
     margin-bottom: 20px;
@@ -149,6 +157,16 @@ body {
 
     .huddle-section {
         text-align: center;
+    }
+    .huddle-cust-img{
+        width: 100%;
+    }
+    .huddle-section{
+      width: 100%;
+    }
+    .huddle-container-mid {
+
+        flex-direction: column;
     }
 
     .huddle-section h1 {
